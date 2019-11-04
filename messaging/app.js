@@ -21,9 +21,6 @@ var firebaseConfig = {
     console.log('tiene permisosa', messaging.getToken());
     return messaging.getToken();
   })
-  .then(function(token){
-    console.log(token);
-  })
   .catch(function(err){
     console.log('error');
   });

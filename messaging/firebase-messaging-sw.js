@@ -5,12 +5,12 @@
 // importScripts('/__/firebase/6.3.4/firebase-messaging.js');
 // importScripts('/__/firebase/init.js');
 
-importScripts('https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js');
+// importScripts('https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js');
+// importScripts('https://www.gstatic.com/firebasejs/7.2.3/firebase-messaging.js');
 
-import * as firebase from "firebase/app";
+// import * as firebase from "firebase/app";
 
-const messaging = firebase.messaging();
+// const messaging = firebase.messaging();
 
 // firebase.initializeApp({
 //   'messagingSenderId': '335455656441'
@@ -43,16 +43,16 @@ const messaging = firebase.messaging();
 // background (Web app is closed or not in browser focus) then you should
 // implement this optional method.
 // [START background_handler]
-messaging.setBackgroundMessageHandler(function(payload) {
-  console.log('[firebase-messaging-sw.js] Received background message ', payload);
-  // Customize notification here
-  const notificationTitle = 'Background Message Title';
-  const notificationOptions = {
-    body: 'Background Message body.',
-    icon: '/firebase-logo.png'
-  };
+// messaging.setBackgroundMessageHandler(function(payload) {
+//   console.log('[firebase-messaging-sw.js] Received background message ', payload);
+//   // Customize notification here
+//   const notificationTitle = 'Background Message Title';
+//   const notificationOptions = {
+//     body: 'Background Message body.',
+//     icon: '/firebase-logo.png'
+//   };
 
-  return self.registration.showNotification(notificationTitle,
-    notificationOptions);
-});
+//   return self.registration.showNotification(notificationTitle,
+//     notificationOptions);
+// });
 // [END background_handler]
